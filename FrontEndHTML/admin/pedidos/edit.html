@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Monterrollo | Modificación del pedido</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <header id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
+            <div class="container">
+                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                        class="fas fa-cogs"></i></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">Admin</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="sidebar" class="sidebarAdmin" data-height="1070">
+            <div class="sidebarLogo">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <img src="../../assets/img/Pasteleria Monterrollo-Fondo Blanco.png" alt="logo-monterrollo"
+                            class="img-fluid img-sidebar">
+                        <p>Pastelería Monterrollo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarContent">
+                <div class="row">
+                    <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="../../admin/dashboard.html">
+                                    <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/productos/index.html">
+                                    <p><i class="fas fa-box"></i> Sabores y Adornos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/pedidos/index.html">
+                                    <p><i class="fas fa-list"></i> Pedidos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/usuarios/index.html">
+                                    <p><i class="fas fa-user"></i> Usuarios</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">
+                                    <p><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="dashboard" class="content">
+        <section id="count" class="section-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <h1 class="text-center">Modificación del pedido P00121</h1>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-5">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6">
+                                            <h2 class="text-center">Datos personales</h2>
+                                            <div class="form-group">
+                                                <label for="name">Nombre completo del cliente</label>
+                                                <input type="text" name="name" id="name" placeholder="Nombre" class="form-control"
+                                                    value="Gerardo Rafael Cabrera Herrera">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email del cliente</label>
+                                                <input type="email" name="email" id="email" placeholder="Email" class="form-control"
+                                                    value="gera_cabrera@correo.com">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Teléfono del cliente</label>
+                                                <input type="phone" name="phone" id="phone" placeholder="Telefono" maxlength="10" class="form-control"
+                                                    value="8183912893">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <h2 class="text-center">Detalles del pedido</h2>
+                                            <div class="form-group">
+                                                <label>Sabores</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox" id="vanillaCheckbox"
+                                                        value="Vanilla" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="vanillaCheckbox">Vanilla</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox" id="chocolateCheckbox"
+                                                        value="Chocolate" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="chocolateCheckbox">Chocolate</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox" id="fresaCheckbox"
+                                                        value="Fresa" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="fresaCheckbox">Fresa</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox" id="limonCheckbox"
+                                                        value="Limón" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="limonCheckbox">Limón</label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Adornos</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox"
+                                                        id="trozosChocolateCheckbox" value="Trozos de chocolate" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosChocolateCheckbox">Trozos de chocolate</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox"
+                                                        id="trozosMangoCheckbox" value="Trozos de mango" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosMangoCheckbox">Trozos de mango</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox"
+                                                        id="trozosFresaCheckbox" value="Trozos de fresa" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosFresaCheckbox">Trozos de fresa</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" name="products[]" type="checkbox"
+                                                        id="trozosDuraznoCheckbox" value="Trozos de durazno" data-price="25.00" onclick="totalIt()" checked>
+                                                    <label class="form-check-label" for="trozosDuraznoCheckbox">Trozos de durazno</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label for="description">Descripción del pedido</label>
+                                                <textarea type="text" id="description" name="description" rows="5" placeholder="Descripción"
+                                                    class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="total">Total del pedido</label>
+                                                <input type="text" name="total" id="total" placeholder="Total" class="form-control" readonly
+                                                    value="$200.00">
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="btn btn-primary btn-block" href="../../admin/pedidos/index.html">Regresar</a>
+                                                <button type="button" class="btn btn-success btn-block">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

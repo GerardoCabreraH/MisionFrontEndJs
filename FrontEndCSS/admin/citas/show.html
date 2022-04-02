@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunate | Información de la cita</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+</head>
+
+<body>
+    <header id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
+            <div class="container">
+                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                        class="fas fa-cogs"></i></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">Admin</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="sidebar" class="sidebarAdmin" data-height="1070">
+            <div class="sidebarLogo">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <p class="titlePrimary">Vacunate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarContent">
+                <div class="row">
+                    <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="../../admin/dashboard.html">
+                                    <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/vacunas/index.html">
+                                    <p><i class="fas fa-syringe"></i> Modulos de vacunacion</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/citas/index.html">
+                                    <p><i class="fas fa-list"></i> Citas</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/usuarios/index.html">
+                                    <p><i class="fas fa-user"></i> Usuarios</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">
+                                    <p><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="dashboard" class="content">
+        <section id="count" class="section-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <h1 class="text-center">Información de la cita V00122</h1>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-5">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <h3 class="text-center">Datos personales</h3>
+                                        <div class="form-group">
+                                            <p><strong>Nombre completo del cliente:</strong> Gerardo Rafael Cabrera Herrera</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Email del cliente:</strong> gera_cabrera@correo.com</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Teléfono del cliente:</strong> 8183912893</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Folio MiVacuna:</strong> A18-52363121</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <h3 class="text-center">Detalles de la cita</h3>
+                                        <div class="form-group">
+                                            <p><strong>Código de la cita:</strong> M00122</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Ubicación:</strong> China, Nuevo Leon</p>
+                                        </div>
+                                        <div class="form-group"><strong>Observaciones para la cita:</strong><br> 
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <p><strong>Acciones:</strong></p>
+                                            <a class="btn btn-primary btn-block" href="../../admin/citas/index.html">Regresar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/admin.js"></script>
+</body>
+
+</html>

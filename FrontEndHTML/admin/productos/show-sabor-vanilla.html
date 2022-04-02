@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Monterrollo | Información del producto</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <header id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
+            <div class="container">
+                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                        class="fas fa-cogs"></i></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">Admin</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="sidebar" class="sidebarAdmin" data-height="1070">
+            <div class="sidebarLogo">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <img src="../../assets/img/Pasteleria Monterrollo-Fondo Blanco.png" alt="logo-monterrollo"
+                            class="img-fluid img-sidebar">
+                        <p>Pastelería Monterrollo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarContent">
+                <div class="row">
+                    <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="../../admin/dashboard.html">
+                                    <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/productos/index.html">
+                                    <p><i class="fas fa-box"></i> Sabores y Adornos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/pedidos/index.html">
+                                    <p><i class="fas fa-list"></i> Pedidos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/usuarios/index.html">
+                                    <p><i class="fas fa-user"></i> Usuarios</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">
+                                    <p><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="dashboard" class="content">
+        <section id="count" class="section-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <h1 class="text-center">Información del sabor Vanilla</h1>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-5">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <img src="../../assets/img/productos/sabor-vanilla.jpg"
+                                                class="img-fluid img-card" alt="producto-pastel">
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Código del producto:</strong> M00122</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Nombre del producto:</strong> Vanilla</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Tipo de producto: </strong> Sabor</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Precio del producto: </strong> $50.00</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p>
+                                                <strong>Descripción del producto:</strong><br>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut labore et dolore magna
+                                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                                eu fugiat nulla pariatur. Excepteur sint
+                                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.
+                                            </p>
+                                        </div>
+                                        <div class="form-group">
+                                            <p><strong>Existencias: </strong> 30</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-12">
+                                        <div class="form-group">
+                                            <p><strong>Acciones:</strong></p>
+                                            <a class="btn btn-primary btn-block"
+                                                href="../../admin/productos/index.html">Regresar</a>
+                                            <a class="btn btn-warning btn-block"
+                                                href="../../admin/productos/edit-sabor-vanilla.html">Editar</a>
+                                            <a class="btn btn-danger btn-block" href="#">Eliminar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

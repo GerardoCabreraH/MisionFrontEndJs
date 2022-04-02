@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Monterrollo | Modificación del producto</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+
+<body>
+    <header id="menu">
+        <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
+            <div class="container">
+                <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                        class="fas fa-cogs"></i></button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">Admin</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="sidebar" class="sidebarAdmin" data-height="1070">
+            <div class="sidebarLogo">
+                <div class="row">
+                    <div class="col-12 col-sm-12 text-center">
+                        <img src="../../assets/img/Pasteleria Monterrollo-Fondo Blanco.png" alt="logo-monterrollo"
+                            class="img-fluid img-sidebar">
+                        <p>Pastelería Monterrollo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebarContent">
+                <div class="row">
+                    <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="../../admin/dashboard.html">
+                                    <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/productos/index.html">
+                                    <p><i class="fas fa-box"></i> Sabores y Adornos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/pedidos/index.html">
+                                    <p><i class="fas fa-list"></i> Pedidos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../admin/usuarios/index.html">
+                                    <p><i class="fas fa-user"></i> Usuarios</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../../index.html">
+                                    <p><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="dashboard" class="content">
+        <section id="count" class="section-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <h1 class="text-center">Modificación del adorno Trozos de fresa</h1>
+                    </div>
+                    <div class="col-12 col-sm-12 mt-5">
+                        <div class="card shadow">
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label for="image" class="ml-2">Imagen del producto</label>
+                                                <div class="drop-zone">
+                                                    <span class="drop-zone__prompt">Arrastra el archivo o haz click para
+                                                        subirlo</span>
+                                                    <input type="file" id="image" name="image"
+                                                        class="form-control drop-zone__input" style="display: none;">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="name">Nombre del producto</label>
+                                                <input type="text" name="name" id="name" placeholder="Nombre"
+                                                    class="form-control" value="Trozos de fresa">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="role">Tipo de producto</label>
+                                                <select class="form-control" type="text" id="role" name="role">
+                                                    <option value="">Seleccionar tipo de producto</option>
+                                                    <option value="Sabor">Sabor</option>
+                                                    <option value="Adorno" selected>Adorno</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="price">Precio del producto</label>
+                                                <input type="text" name="price" id="price" placeholder="Precio"
+                                                    class="form-control" value="50.00">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="description">Descripción del producto</label>
+                                                <textarea type="text" id="description" name="description" id="description" rows="5"
+                                                    placeholder="Descripción"
+                                                    class="form-control">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="stock">Existencias</label>
+                                                <input type="text" name="stock" id="stock" placeholder="Existencias"
+                                                    class="form-control" value="30">
+                                            </div>
+                                            <div class="form-group">
+                                                <a class="btn btn-primary btn-block"
+                                                    href="../../admin/productos/show-trozos-fresa.html">Regresar</a>
+                                                <button type="button" class="btn btn-success btn-block">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>

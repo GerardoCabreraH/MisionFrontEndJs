@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vacunate | Gestión de modulos de vacunación</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/all.min.css">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/admin.css">
+    </head>
+    <body>
+        <header id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
+                <div class="container">
+                    <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                            class="fas fa-cogs"></i></button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">Admin</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section id="sidebar" class="sidebarAdmin" data-height="1070">
+                <div class="sidebarLogo">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 text-center">
+                            <p class="titlePrimary">Vacunate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebarContent">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
+                            <ul>
+                                <li>
+                                    <a href="../../admin/dashboard.html">
+                                        <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../admin/vacunas/index.html">
+                                        <p><i class="fas fa-syringe"></i> Modulos de vacunacion</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../admin/citas/index.html">
+                                        <p><i class="fas fa-list"></i> Citas</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../admin/usuarios/index.html">
+                                        <p><i class="fas fa-user"></i> Usuarios</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html">
+                                        <p><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main id="dashboard" class="content">
+            <section id="count" class="section-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <h1 class="text-center">Gestión de modulos de vacunación</h1>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <div class="card text-white bg-success mb-3 h-100 shadow">
+                                        <div class="card-body text-center">
+                                            <p><span class="icon-dashboard"><i class="fas fa-syringe"></i></i></span></p>
+                                            <p>5 módulos de vacunación</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="vacunas" class="section-light">
+                <div class="container">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <h2 class="text-center">Lista de modulos de vacunación</h2>
+                                    <a href="../../admin/vacunas/create.html" class="btn btn-success btn-block">Crear</a>
+                                </div>
+                                <div class="col-12 col-sm-12 mt-5">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12">
+                                            <div class="card shadow">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-12 col-sm-12">
+                                                            <h2 class="text-center">Módulos de vacunación</h2>
+                                                        </div>
+                                                        <div class="col-12 col-sm-12 mt-5">
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item"><a href="../../admin/vacunas/show.html">Ciudad: Melchor Ocampo Estado: Nuevo León Vacuna:
+                                                                        Astrazeneca</a></li>
+                                                                <li class="list-group-item"><a href="../../admin/vacunas/show.html">Ciudad: Los Herrera Estado: Nuevo León
+                                                                        Vacuna: Astrazeneca/a>
+                                                                </li>
+                                                                <li class="list-group-item"><a href="../../admin/vacunas/show.html">Ciudad: General Treviño Estado: Nuevo
+                                                                        León Vacuna: Astrazeneca</a>
+                                                                </li>
+                                                                <li class="list-group-item"><a href="../../admin/vacunas/show.html">Ciudad: Linares Estado: Nuevo León
+                                                                        Vacuna: Astrazeneca</a>
+                                                                </li>
+                                                                <li class="list-group-item"><a href="../../admin/vacunas/show.html">Ciudad: General Bravo Estado: Nuevo León
+                                                                        Vacuna: Astrazeneca</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/main.js"></script>
+        <script src="../../assets/js/admin.js"></script>
+    </body>
+</html>

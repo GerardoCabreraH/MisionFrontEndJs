@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vacunate | Gestión de usuarios</title>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/css/all.min.css">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+        <link rel="stylesheet" href="../../assets/css/admin.css">
+    </head>
+    <body>
+        <header id="menu">
+            <nav class="navbar navbar-expand-lg navbar-light navbarAdmin">
+                <div class="container">
+                    <button type="button" id="navbarBrandAdmin" class="navbar-brand btn btn-link" onclick="showSidebar()"><i
+                            class="fas fa-cogs"></i></button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">Admin</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section id="sidebar" class="sidebarAdmin" data-height="1070">
+                <div class="sidebarLogo">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 text-center">
+                            <p class="titlePrimary">Vacunate</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebarContent">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 d-flex flex-column justify-content-center">
+                            <ul>
+                                <li>
+                                    <a href="../../admin/dashboard.html">
+                                        <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../admin/vacunas/index.html">
+                                        <p><i class="fas fa-syringe"></i> Modulos de vacunacion</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../admin/citas/index.html">
+                                        <p><i class="fas fa-list"></i> Citas</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../admin/usuarios/index.html">
+                                        <p><i class="fas fa-user"></i> Usuarios</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../../index.html">
+                                        <p><i class="fas fa-sign-out-alt"></i> Cerrar sesión</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main id="dashboard" class="content">
+            <section id="count" class="section-light">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12">
+                            <h1 class="text-center">Gestión de usuarios</h1>
+                        </div>
+                        <div class="col-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <div class="card text-white bg-success mb-3 h-100 shadow">
+                                        <div class="card-body text-center">
+                                            <p><span class="icon-dashboard"><i class="fas fa-user"></i></i></span></p>
+                                            <p>1 Usuarios</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="usuarios" class="section-light">
+                <div class="container">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12 col-sm-12">
+                                    <h2 class="text-center">Lista de usuarios</h2>
+                                    <a href="../../admin/usuarios/create.html" class="btn btn-success btn-block">Crear</a>
+                                </div>
+                                <div class="col-12 col-sm-12 mt-5">
+                                    <table id="tablaDashboard" class="table table-hover text-nowrap table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Código de usuario</th>
+                                                <th>Nombre del usuario</th>
+                                                <th>Rol de usuario</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Código de usuario">
+                                                    <p class="mt-2">U00122</p>
+                                                </td>
+                                                <td data-label="Nombre del usuario">
+                                                    <p class="mt-2">Admin</p>
+                                                </td>
+                                                <td data-label="Rol de usuario">
+                                                    <p class="mt-2">Administrador</p>
+                                                </td>
+                                                <td data-label="Acciones">
+                                                    <div class="form-group d-flex align-items-sm-center flex-sm-row flex-column mt-2">
+                                                        <div class="p-1">
+                                                            <a class="btn btn-primary" href="../../admin/usuarios/show.html">Ver</a>
+                                                        </div>
+                                                        <div class="p-1">
+                                                            <a class="btn btn-warning" href="../../admin/usuarios/edit.html">Editar</a>
+                                                        </div>
+                                                        <div class="p-1">
+                                                            <a class="btn btn-danger" href="#">Eliminar</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/main.js"></script>
+        <script src="../../assets/js/admin.js"></script>
+    </body>
+</html>
